@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node backend/index.js",
+    "start": "cross-env NODE=production node backend/index.js",
     "dev": "nodemon backend/index.js",
     "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
@@ -19,5 +19,8 @@
     "express": "^4.21.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.7.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }

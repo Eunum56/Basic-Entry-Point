@@ -8,7 +8,7 @@ import userRoutes from './Routes/authorised.route.js'
 import path from 'path'
 
 const corsOptions = {
-    origin: ['http://localhost:4000'],
+    origin: ['http://localhost:4000', 'http://localhost:5173'],
     methods: ['GET', 'POST'],
     credentials: true,
 };
@@ -26,11 +26,13 @@ app.use(cookieParser())
 app.use("/api", authroutes)
 app.use("/api/user", userRoutes)
 
+if (process.env.NODE === 'production') {
+    app.use(express.static(path.join(dirname, "/frontend/dist")))
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(dirname, "frontend", "dist", "index.html"))
+    })
+}
 
-app.use(express.static(path.join(dirname, "/frontend/dist")))
-app.get('*', (req, res) => {
-    res.sendFile(path.resolve(dirname, "frontend", "dist", "index.html"))
-})
 
 const PORT = process.env.PORT || 3020
 app.listen(PORT, () => {
