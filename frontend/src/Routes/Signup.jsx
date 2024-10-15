@@ -1,5 +1,5 @@
 import { Form, redirect, useActionData, useNavigate } from "react-router-dom";
-import styles from "../CSS_Modules/Signup.module.css";
+import styles from "../CSS_Modules/SignUp.module.css";
 import { useEffect } from "react";
 
 const Signup = () => {
