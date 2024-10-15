@@ -93,4 +93,4 @@ You can view live demo here : https://basic-entry-point.onrender.com/
 
 ## Contributing
 
-We welcome contributions! Whether you're fixing a bug, adding a feature, or improving documentation, your help is appreciated.
+Contributions are welcome. Whether you're fixing a bug, adding a feature, or improving documentation, your help is appreciated.
