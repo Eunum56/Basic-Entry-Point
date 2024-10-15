@@ -33,7 +33,7 @@ This project is a web application that allows users to sign up, log in, and acce
 
 ## Demo
 
-You can view live demo here :
+You can view live demo here : https://basic-entry-point.onrender.com/
 
 ## Getting Started
 
