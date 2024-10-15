@@ -9,7 +9,7 @@ const Login = () => {
   useEffect(() => {
     const checkLoginUser = async () => {
       try {
-        const response = await fetch("http://localhost:4000/api/user/login", {
+        const response = await fetch("api/user/login", {
           method: "GET",
           credentials: "include",
         });
@@ -102,7 +102,7 @@ export const handlelogin = async (e) => {
   const Data = Object.fromEntries(formData);
 
   try {
-    const response = await fetch("http://localhost:4000/api/login", {
+    const response = await fetch("api/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       credentials: "include",

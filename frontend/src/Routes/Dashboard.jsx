@@ -10,13 +10,10 @@ const Dashboard = () => {
   useEffect(() => {
     const checkAuthentication = async () => {
       try {
-        const response = await fetch(
-          "http://localhost:4000/api/user/dashboard",
-          {
-            method: "GET",
-            credentials: "include",
-          }
-        );
+        const response = await fetch("api/user/dashboard", {
+          method: "GET",
+          credentials: "include",
+        });
 
         const result = await response.json();
 
@@ -37,7 +34,7 @@ const Dashboard = () => {
   // Logout handler
   const handleLogout = async () => {
     try {
-      const res = await fetch("http://localhost:4000/api/logout", {
+      const res = await fetch("api/logout", {
         method: "POST",
         credentials: "include",
       });
