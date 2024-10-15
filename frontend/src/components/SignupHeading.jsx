@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "../CSS_Modules/signup.module.css";
+import styles from "../CSS_Modules/SignUp.module.css";
 const SignupHeading = ({ value, setValue }) => {
   const changesignup = () => {
     setValue("signup");

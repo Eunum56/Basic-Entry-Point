@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "../CSS_Modules/login.module.css";
+import styles from "../CSS_Modules/Login.module.css";
 const LoginHeading = ({ value, setValue }) => {
   const changelogin = () => {
     setValue("login");
