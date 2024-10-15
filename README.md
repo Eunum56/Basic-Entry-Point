@@ -47,8 +47,8 @@ You can view live demo here :
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
-   cd <Basic-Entry-Point>
+   git clone https://github.com/Eunum56/Basic-Entry-Point
+   cd Basic-Entry-Point
    ```
 
 2. Start Backend Server:
@@ -64,7 +64,6 @@ You can view live demo here :
    ```
 
    To start the Backend Server (Install nodemon if you haven't)
-   Backend server will run on port 4000 (http://localhost:4000)
 
 3. Start Frontend Server:
    Go to Frontend folder
@@ -84,7 +83,6 @@ You can view live demo here :
    ```
 
    To start the Frontend Server
-   Frontend Server will run on (http://localhost:5173) by default
 
 4. Create a `.env` file in the Root `Basic-Entry-Point` directory with the following variables
 

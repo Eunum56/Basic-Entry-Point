@@ -7,11 +7,11 @@ import authroutes from './Routes/auth.route.js'
 import userRoutes from './Routes/authorised.route.js'
 import path from 'path'
 
-const corsOptions = {
-    origin: ['http://localhost:4000', 'http://localhost:5173'],
-    methods: ['GET', 'POST'],
-    credentials: true,
-};
+// const corsOptions = {
+//     origin: ['http://localhost:4000', 'http://localhost:5173'],
+//     methods: ['GET', 'POST'],
+//     credentials: true,
+// };
 
 const dirname = path.resolve()
 
@@ -19,7 +19,7 @@ const app = express()
 configDotenv()
 
 app.use(express.json())
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(cookieParser())
 
 
